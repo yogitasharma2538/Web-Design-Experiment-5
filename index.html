@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple weather application that displays current weather information for any city.">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Weather App</h1>
+        <p class="subtitle">Check the current weather of any city</p>
+
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button onclick="getWeather()">Search</button>
+        </div>
+
+        <p id="message"></p>
+
+        <div class="weather-info" id="weatherInfo">
+            <h2 id="cityName"></h2>
+            <p id="weatherCondition"></p>
+            <h1 id="temperature"></h1>
+
+            <div class="details">
+                <div class="detail-box">
+                    <h3>Humidity</h3>
+                    <p id="humidity"></p>
+                </div>
+
+                <div class="detail-box">
+                    <h3>Wind Speed</h3>
+                    <p id="wind"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
